@@ -19,11 +19,6 @@ export default function HomePage() {
           <span className="pill">Blijf luisteren, we zijn zo live.</span>
         </div>
       </div>
-
-      <footer>
-        Deze tijdelijke pagina draait al op je hosting. Zet straks de definitieve stream live wanneer
-        je klaar bent.
-      </footer>
     </main>
   );
 }
