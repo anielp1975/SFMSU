@@ -5,8 +5,8 @@ import { Manrope } from "next/font/google";
 const manrope = Manrope({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: "Welkom bij SFMSU",
-  description: "Eenvoudige Next.js welkomstpagina klaar voor Hostinger."
+  title: "Radio SunriseFm Suriname – Coming Soon",
+  description: "Tijdelijke aankondiging voor Radio SunriseFm Suriname."
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

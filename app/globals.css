@@ -1,11 +1,11 @@
 :root {
-  --bg: radial-gradient(circle at 20% 20%, #fef3c7 0, #fff 35%),
-    radial-gradient(circle at 80% 0%, #d1fae5 0, #fff 25%),
-    radial-gradient(circle at 50% 100%, #bfdbfe 0, #fff 35%);
-  --panel: #0f172a;
-  --text: #0b1220;
-  --muted: #5b6475;
-  --accent: #0ea5e9;
+  --bg: radial-gradient(circle at 20% 20%, #fff7ed 0, #fff 32%),
+    radial-gradient(circle at 75% 15%, #dbeafe 0, #fff 28%),
+    radial-gradient(circle at 50% 110%, #ffe8c8 0, #fff 40%);
+  --panel: #0b1024;
+  --text: #0a0e1a;
+  --muted: #5f6477;
+  --accent: #f97316;
   color-scheme: light;
 }
 
@@ -34,32 +34,51 @@ main.page {
   text-align: center;
 }
 
-.card {
+.hero {
   width: 100%;
-  background: var(--panel);
+  background: linear-gradient(135deg, #0f172a, #101a3a 55%, #0b122e);
   color: #fff;
-  border-radius: 24px;
-  padding: 40px 32px;
-  box-shadow: 0 20px 60px rgba(10, 18, 32, 0.18);
+  border-radius: 26px;
+  padding: 48px 36px;
+  box-shadow: 0 24px 70px rgba(10, 18, 32, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 13px;
-  color: #9fb5d1;
-  margin-bottom: 12px;
+  color: #a8b9dc;
+  margin-bottom: 14px;
 }
 
-.card h1 {
-  font-size: clamp(32px, 5vw, 44px);
-  margin-bottom: 12px;
+.hero h1 {
+  font-size: clamp(34px, 5vw, 48px);
+  margin-bottom: 14px;
 }
 
 .lede {
-  color: #c4d3e9;
+  color: #c7d3ef;
   font-size: 17px;
   line-height: 1.6;
+}
+
+.chips {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 6px;
+}
+
+.chip {
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: rgba(249, 115, 22, 0.14);
+  color: #ffd7b3;
+  border: 1px solid rgba(249, 115, 22, 0.25);
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .actions {
@@ -67,7 +86,19 @@ main.page {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
-  margin-top: 20px;
+  margin-top: 22px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #dfe6fb;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-weight: 600;
 }
 
 .button {
@@ -83,9 +114,9 @@ main.page {
 }
 
 .button.primary {
-  background: linear-gradient(120deg, #0ea5e9, #2563eb);
-  color: #fff;
-  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.28);
+  background: linear-gradient(120deg, #f97316, #fb923c);
+  color: #0b0f1f;
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.28);
 }
 
 .button.ghost {
@@ -115,7 +146,7 @@ footer {
     padding: 32px 12px;
   }
 
-  .card {
-    padding: 28px 22px;
+  .hero {
+    padding: 34px 24px;
   }
 }

@@ -1,26 +1,28 @@
-import Link from "next/link";
-
 export default function HomePage() {
   return (
     <main className="page">
-      <div className="card">
-        <p className="eyebrow">Next.js op Hostinger</p>
-        <h1>Welkom bij SFMSU</h1>
+      <div className="hero">
+        <p className="eyebrow">Radio SunriseFm • Suriname</p>
+        <h1>Coming soon</h1>
         <p className="lede">
-          Je app draait op het moderne Next.js framework. Pas deze pagina aan,
-          deploy naar Hostinger en je staat meteen live.
+          We zetten de studio klaar voor een frisse stream met hits, nieuws en community. Binnenkort
+          zijn we live; houd deze pagina in de gaten.
         </p>
+
+        <div className="chips">
+          <span className="chip">24/7 hits</span>
+          <span className="chip">Surinaamse vibes</span>
+          <span className="chip">Online stream</span>
+        </div>
+
         <div className="actions">
-          <Link href="https://vercel.com/docs" target="_blank" className="button primary">
-            Handleiding Next.js
-          </Link>
-          <Link href="https://www.hostinger.nl/tutorials" target="_blank" className="button ghost">
-            Hostinger tips
-          </Link>
+          <span className="pill">Blijf luisteren, we zijn zo live.</span>
         </div>
       </div>
+
       <footer>
-        Klaar voor productie? Run <span className="code">npm run build</span> en upload de output.
+        Deze tijdelijke pagina draait al op je hosting. Zet straks de definitieve stream live wanneer
+        je klaar bent.
       </footer>
     </main>
   );
