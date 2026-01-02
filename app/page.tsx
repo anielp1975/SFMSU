@@ -18,6 +18,15 @@ export default function HomePage() {
         <div className="actions">
           <span className="pill">Blijf luisteren, we zijn zo live.</span>
         </div>
+
+        <div className="player">
+          <p className="label">Luister live</p>
+          <audio controls preload="none">
+            <source src="http://72.62.151.219/listen/sunrisefm_suriname/radio.mp3" type="audio/mpeg" />
+            Je browser ondersteunt geen audio tag.
+          </audio>
+          <p className="hint">Werkt de stream niet? Vernieuw de pagina of probeer later opnieuw.</p>
+        </div>
       </div>
     </main>
   );
