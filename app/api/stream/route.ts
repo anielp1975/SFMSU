@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const UPSTREAM_URL = "http://72.62.151.219/listen/sunrisefm_suriname/radio.mp3";
+const UPSTREAM_URL = "http://www.sunrisefmsuriname.cloud/listen/sunrisefm_suriname/SFMSU";
 
 export async function GET() {
   try {
