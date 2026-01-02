@@ -28,6 +28,8 @@ export default function HomePage() {
           <p className="hint">Werkt de stream niet? Vernieuw de pagina of probeer later opnieuw.</p>
         </div>
       </div>
+
+      <footer className="footnote">© 2026 Radio SunriseFm Suriname. Alle rechten voorbehouden.</footer>
     </main>
   );
 }

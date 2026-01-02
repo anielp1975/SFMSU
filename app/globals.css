@@ -163,6 +163,12 @@ footer {
   font-size: 14px;
 }
 
+.footnote {
+  margin-top: 12px;
+  color: #5f6477;
+  font-size: 13px;
+}
+
 .code {
   background: rgba(15, 23, 42, 0.08);
   padding: 4px 8px;
