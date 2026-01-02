@@ -111,10 +111,7 @@ main.page {
 }
 
 .player audio {
-  width: 100%;
-  max-width: 520px;
-  margin: 0 auto;
-  display: block;
+  display: none;
 }
 
 .label {
@@ -128,6 +125,52 @@ main.page {
   margin-top: 10px;
   color: #c7d3ef;
   font-size: 14px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.control {
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  color: #0b0f1f;
+  border: 1px solid rgba(249, 115, 22, 0.35);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.28);
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.control:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(249, 115, 22, 0.35);
+}
+
+.control:active {
+  transform: translateY(0);
+}
+
+.volume {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 8px 10px;
+  color: #e9edf8;
+  font-weight: 600;
+}
+
+.volume input[type="range"] {
+  accent-color: #f97316;
 }
 
 .button {
