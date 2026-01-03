@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 /* eslint-disable @next/next/no-img-element */
-const STREAM_URL = "http://www.sunrisefmsuriname.cloud/listen/sunrisefm/radio.mp3";
+const STREAM_URL = "/api/stream";
 
 export default function HomePage() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
