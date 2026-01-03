@@ -172,6 +172,17 @@ main.page {
   font-size: 14px;
 }
 
+.contact {
+  margin-top: 10px;
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+}
+
+.contact .label {
+  color: #fff;
+}
+
 .footnote {
   text-align: center;
   color: var(--muted);

@@ -69,7 +69,7 @@ export default function HomePage() {
           />
           <div>
             <p className="eyebrow">SunriseFM Suriname · 100.1 FM</p>
-            <h1>Luister direct naar SunriseFM</h1>
+            <h1>Luister naar SunriseFM Suriname</h1>
             <p className="lede">Wereldwijd via onze online radio. Surinaamse vibes, 24/7.</p>
           </div>
         </div>
@@ -105,6 +105,13 @@ export default function HomePage() {
             probeer later opnieuw.
           </div>
           {error ? <p className="hint" aria-live="polite">{error}</p> : null}
+        </div>
+
+        <div className="card contact">
+          <p className="label">Contact</p>
+          <p>Pandit Paltan Tewarieweg 37</p>
+          <p>Paramaribo / Livorno, Suriname</p>
+          <p>Tel: 597-482650 · 597-8820065</p>
         </div>
       </section>
 
