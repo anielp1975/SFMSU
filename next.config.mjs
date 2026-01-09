@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  output: "export"
+  // Gebruik server/standalone build i.p.v. statische export; de streamroute is dynamisch.
+  reactStrictMode: true
 };
 
 export default nextConfig;

@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic"; // avoid static optimization; stream must stay live
+
 const UPSTREAM_URL = "http://www.sunrisefmsuriname.cloud/listen/sunrisefm/radio.mp3";
 
 export async function GET() {
